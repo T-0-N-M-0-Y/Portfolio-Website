@@ -19,6 +19,7 @@
     font-weight: 700;
     font-size: 15px;
 }
+
 .btn-secondary {
     color: #FD6E0A;
     margin-left: 10px;
@@ -32,7 +33,7 @@
 
 /* Header & Navigation */
 
-.header{
+.header {
     background-color: #FFF8F3;
     background-image: url(/images/header_bg.png), url(/images/developer.png);
     background-repeat: no-repeat;
@@ -63,27 +64,29 @@ nav ul li {
 
 /* banner design  */
 
-.banner{
+.banner {
     display: flex;
     margin: 50px 100px;
     align-items: center;
 }
 
-.banner img{
+.banner img {
     width: 350px;
     height: 670px;
 }
 
-.banner-title{
+.banner-title {
     font-weight: 600;
     font-size: 60px;
     margin-top: 20px;
 }
-.banner-subtitle{
+
+.banner-subtitle {
     font-weight: 600;
     font-size: 35px;
 }
-.banner-para{
+
+.banner-para {
     color: rgba(117, 117, 117, 1);
     font-size: 18px;
     justify-content: center;
@@ -93,45 +96,82 @@ nav ul li {
 
 /* Main Section */
 
-main{
+
+main {
     max-width: 1140px;
     margin: 0 auto;
-
-    /* text-align: center; */
 }
 
-/* About Section */
-
-.about-me{
+section{
     margin-top: 130px;
-    background: #FFF8F3;
-    padding: 130px 150px;
-    text-align: center;
 }
 
-.section-title{
+.section-title {
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 700;
+    text-align: center;
 }
 
-.section-para{
+
+/* About Section */
+
+.about-me {
+    background: #FFF8F3;
+    padding: 130px 150px;
+
+}
+
+.section-para {
     font-size: 18px;
     color: rgba(117, 117, 117, 1);
     margin-bottom: 30px;
 }
 
-.about-info-container{
+.about-info-container {
     display: flex;
     justify-content: space-around;
 }
 
-.about-info-title{
+.about-info-title {
     color: #757575;
     font-size: 20px;
 }
-.about-info-para{
+
+.about-info-para {
     font-weight: 700;
     font-size: 20px;
     color: #474747;
+}
+
+/* My Skills Section */
+
+.my-skills .section-para {
+    padding: 10px 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.skill-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+.skill-para {
+    color: #757575;
+    font-size: 16px;
 }
