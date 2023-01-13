@@ -43,7 +43,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 50px 200px;
+    padding: 50px 100px;
 }
 
 .nav-title {
@@ -66,7 +66,7 @@ nav ul li {
 
 .banner {
     display: flex;
-    margin: 50px 110px;
+    margin: 50px 100px;
     align-items: center;
 }
 
@@ -92,6 +92,87 @@ nav ul li {
     justify-content: center;
     padding-right: 400px;
     margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    nav, nav ul{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0px;
+        align-items: center;
+    }
+
+    .banner{
+        flex-direction: column;
+        padding: 10px 40px;
+        margin: 0;
+    }
+
+    .banner-title {
+        font-size: 25px;
+    }
+    
+    .banner-subtitle {
+        font-size: 20px;
+    }
+    
+    .banner-para {
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+
+    .banner img{
+        width: 100%;
+    }
+
+    .btn-primary {
+        font-size: 10px;
+    }
+    
+    .btn-secondary {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    nav, nav ul{
+        gap: 20px;
+        padding-left: 50px;
+        justify-content: space-between;
+    }
+
+    nav ul li{
+        margin-left: 0px;
+    }
+
+    .banner{
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .banner-items{
+        padding-left: 100px;
+    }
+
+    .banner-title {
+        font-size: 25px;
+    }
+    
+    .banner-subtitle {
+        font-size: 20px;
+    }
+    
+    .banner-para {
+        font-size: 15px;
+        padding-right: 0;
+    }
 }
 
 /* Main Section */
@@ -144,6 +225,36 @@ section{
     color: #474747;
 }
 
+@media screen and (max-width: 576px) {
+    .about-info-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    .about-me{
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .about-me{
+        padding: 10px 20px;
+    }
+
+    .section-para {
+        font-size: 15px;
+    }
+
+    .about-info-title {
+        font-size: 15px;
+    }
+    
+    .about-info-para {
+        font-size: 15px;
+    }
+}
+
 /* My Skills Section */
 
 .my-skills .section-para {
@@ -174,6 +285,25 @@ section{
 .skill-para {
     color: #757575;
     font-size: 16px;
+}
+
+
+/* Responsive Styles  */
+
+@media screen and (max-width: 576px) {
+    .skills-container {
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .skills-container{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 /* Resume styles */
@@ -218,6 +348,36 @@ section{
     text-align: center;
 }
 
+/* Responsive Styles  */
+
+@media screen and (max-width: 576px) {
+    .resume-content{
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .resume-content{
+        padding: 10px 20px;
+    }
+
+    .resume-item .title{
+        font-size: 20px;
+        
+    }
+    .resume-item .sub-title{
+        font-size: 15px;
+    
+    }
+    .resume-item .para{
+        font-size: 15px;
+    }
+    
+}
+
+
 /* contact styles */
 
 .contact{
@@ -250,4 +410,31 @@ section{
 
 input{
     height: 64px;
+}
+
+/* Responsive Styles  */
+
+@media screen and (max-width: 576px) {
+    .contact{
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .contact{
+        padding: 20px 20px;
+        gap: 40px;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0;
+    }
+    .contact .section-title{
+        font-size: 25px;
+    }
 }
